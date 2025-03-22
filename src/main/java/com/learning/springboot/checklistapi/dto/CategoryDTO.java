@@ -4,6 +4,7 @@ import com.learning.springboot.checklistapi.entity.CategoryEntity;
 import lombok.Builder;
 import lombok.Getter;
 
+
 import javax.validation.constraints.NotBlank;
 
 @Getter

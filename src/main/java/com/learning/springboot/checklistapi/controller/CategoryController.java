@@ -26,7 +26,7 @@ import java.util.stream.StreamSupport;
 @RequestMapping("/v1/api/categories")
 public class CategoryController {
 
-    private CategoryService categoryService;
+    private CategoryService categoryService;//testando
 
     public CategoryController(CategoryService categoryService){
         this.categoryService = categoryService;
