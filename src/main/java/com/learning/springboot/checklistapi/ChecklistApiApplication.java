@@ -27,8 +27,9 @@ public class ChecklistApiApplication {
 				registry.addMapping("/**")
 						.allowedOrigins("http://localhost:4200")
 						.allowedMethods("GET", "PUT", "OPTIONS", "POST", "DELETE", "PATCH")
-						.maxAge(900)
-						.allowedHeaders("Origin", "X-Requested-With", "Content-Type", "Accept", "Authorization");
+						//.maxAge(900)
+						.allowedHeaders("*")
+						.allowCredentials(false);;
 			}
 		};
 	}
@@ -48,6 +49,8 @@ public class ChecklistApiApplication {
 		};
 	}
 
+
+
 	@Bean
 	public OpenAPI customOpenApi(){
 
@@ -56,8 +59,8 @@ public class ChecklistApiApplication {
 						.title("Checklist API for Udemy Curse")
 						.description("Sample API created for learning purposes")
 						.contact(new Contact()
-								.name("Carlos Lazarin")
-								.email("carlos.joia.mail@gmail.com")
+								.name("Joao Maria")
+								.email("joao@jaoo.com")
 						)
 						.version("V1")
 						.termsOfService("http://mywebsite.com.br")

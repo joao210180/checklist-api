@@ -51,7 +51,7 @@ public class ChecklistItemController {
         return new ResponseEntity<>(resp, HttpStatus.OK);
     }
 
-    @Operation(description = "Inserts a new checklist item")
+    @Operation(description = "Inserts a new checklist item q jaoo falou")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "Created new checklist item"),
             @ApiResponse(responseCode = "422", description = "Provided category guid was not found")

@@ -83,8 +83,12 @@
 		<profile>
 			<id>local</id>
 			<activation>
-				<activeByDefault>true</activeByDefault>
+				<property>
+					<name>spring.profiles.active</name>
+					<value>local</value>
+				</property>
 			</activation>
+
 			<dependencies>
 				<dependency>
 					<groupId>com.h2database</groupId>
