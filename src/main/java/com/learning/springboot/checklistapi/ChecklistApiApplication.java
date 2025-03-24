@@ -41,7 +41,7 @@ public class ChecklistApiApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
-						.allowedOrigins("http://checklist-spa-joao.s3-website-sa-east-1.amazonaws.com")
+						.allowedOrigins("http://checklist-spa-joao.s3-website-sa-east-1.amazonaws.com") 
 						.allowedMethods("GET", "PUT", "OPTIONS", "POST", "DELETE", "PATCH")
 						.maxAge(900)
 						.allowedHeaders("Origin", "X-Requested-With", "Content-Type", "Accept", "Authorization");
